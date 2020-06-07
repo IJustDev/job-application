@@ -3,6 +3,9 @@
 This repository is a small side project of mine that creates nice looking applications with a single yaml file.
 It is used for my plan, to contact all companies within a radius of 20 kilometers.
 
+## Inspiration - Owner of Template
+The CV template was **NOT** created by me. I downloaded it from [here][cv-template] and modified it to be a template used for lightning fast CV creating with `pandoc` and `yaml`.
+
 ## Example
 Take a look at the [CV][cv].
 
@@ -34,3 +37,4 @@ Also take a look at the [`src/letter.tex`][letter.tex] file to change the defaul
 [letter.tex]: ./example/letter.pdf
 [data.yml]: ./data.yml
 [developercv]: ./developercv.cls
+[cv-template]: https://www.latextemplates.com/template/developer-cv
