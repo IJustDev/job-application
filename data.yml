@@ -1,0 +1,56 @@
+---
+firstname: Max
+lastname: Muster
+mail: max@mustermann.de
+username: IJustDev
+career: Fullstack Developer
+street: Musterstrasse 4
+city: Berlin
+plz: 123456
+phone: +49 123 4567 8910
+description: \lorem \lorem \lorem \lorem
+technologies:
+    - percentage: 70
+      name: Typescript
+    - percentage: 85
+      name: Vim
+    - percentage: 87
+      name: Linux
+    - percentage: 65
+      name: Python
+    - percentage: 70
+      name: JS, HTML, SASS/LESS
+    - percentage: 50
+      name: Docker
+    - percentage: 34
+      name: Latex
+experience:
+    - time: 2000 -- 2020
+      title: Not your business
+      company: Company Name
+      description: \lorem
+      technologies:
+          - name: C#
+          - name: Javascript
+education:
+    - time: 1980 -- 2000
+      title: Some School
+      institutionname: Next Level University
+    - time: 1960 -- 1980
+      title: Title of Things
+      institutionname: Middle school
+languages:
+    - language: German
+      level: native
+    - language: Englisch
+      level: native
+    - language: French
+      level: native
+subject: Application
+to_name: Johannes Mustermann
+to_street: Musterstrasse 420
+to_place: 123456 Musterort
+salutation: Sehr geehrte Damen und Herren
+greeting: Mit freundlichen Grüssen
+individual_paragraph: I really like your company.
+---

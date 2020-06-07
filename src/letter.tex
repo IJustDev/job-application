@@ -1,0 +1,44 @@
+\documentclass[
+  fontsize=11pt,
+  paper=a4,
+  parskip=half,
+  enlargefirstpage=on,    % More space on first page
+  fromalign=right,        % PLacement of name in letter head
+  fromrule=aftername,     % Rule after sender name in letter head
+  addrfield=on,           % Adress field for envelope with window
+  backaddress=on,         % Sender address in this window
+  subject=beforeopening,  % Placement of subject
+  locfield=narrow,        % Additional field for sender
+  foldmarks=on,           % Print foldmarks
+]{scrlttr2}
+\usepackage[default]{raleway}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+
+\setkomafont{fromname}{\sffamily \LARGE}
+\setkomafont{fromaddress}{\sffamily}%% statt \small
+\setkomafont{pagenumber}{\sffamily}
+\setkomafont{subject}{\bfseries}
+\setkomafont{backaddress}{\mdseries}
+
+\LoadLetterOption{DIN}
+\setkomavar{fromname}{$firstname$ $lastname$}
+\setkomavar{fromaddress}{$street$\\$plz$ $city$}
+\setkomavar{fromemail}{$mail$}
+\setkomavar{backaddressseparator}{\enspace\textperiodcentered\enspace}
+\setkomavar{signature}{($firstname$ $lastname$)}
+\setkomavar{place}{$city$}
+\setkomavar{date}{\today}
+\setkomavar{enclseparator}{: }
+
+\begin{document}
+  \begin{letter}{$to_name$ \\$to_street$\\$to_place$}
+    \setkomavar{subject}{$subject$}
+    \opening{$salutation$,}
+        ich habe Ihr Unternehmen vor Kurzem über die Plattform StepStone gefunden und bin bei Ihrem Unternehmensprofil hellhörig geworden.
+        $individual_paragraph$
+    \closing{$greeting$,}
+  \end{letter}
+\end{document}
